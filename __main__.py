@@ -22,7 +22,7 @@ class Status(str, Enum):
         name: str, start: int, count: int, last_values: list[str]
     ) -> str:
         # https://github.com/python/mypy/issues/7591
-        return name.title().replace("_", " ")
+        return name.title()
 
     ACCEPTED = auto()
     ACTIVE = auto()
